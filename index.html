@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satya Dineswara Reddy Satti | Data Analyst Portfolio</title>
+    <title>Satya Dineswara Reddy Satti | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Navigation */
@@ -42,20 +43,23 @@
             text-align: center;
             background-color: #1f2937;
             color: white;
+            padding: 0 20px;
         }
         .hero h1 {
             font-size: 3.5em;
             font-weight: 700;
+            animation: fadeIn 2s;
         }
         .hero p {
             font-size: 1.5em;
+            animation: fadeIn 2.5s;
         }
 
         /* About Section */
         .about {
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            background-color: white;
+            background-color: #f8f9fa;
         }
         .about h2 {
             font-size: 2.5em;
@@ -65,13 +69,73 @@
         .about p {
             font-size: 1.2em;
             color: #333;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+        }
+
+        /* Work Experience Section */
+        .experience {
+            padding: 60px 20px;
+            background-color: white;
+            text-align: left;
+        }
+        .experience h2 {
+            font-size: 2.5em;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .job {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f0f4f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .job h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .job p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 60px 20px;
+            text-align: left;
+            background-color: #f8f9fa;
+        }
+        .projects h2 {
+            font-size: 2.5em;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project a {
+            color: #22d3ee;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project a:hover {
+            text-decoration: underline;
         }
 
         /* Skills Section */
         .skills {
-            padding: 80px 20px;
-            background-color: #f0f4f8;
+            padding: 60px 20px;
+            background-color: white;
             text-align: center;
         }
         .skills h2 {
@@ -87,93 +151,48 @@
         .skill {
             flex-basis: 20%;
             margin: 10px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Projects Section */
-        .projects {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: white;
-        }
-        .projects h2 {
-            font-size: 2.5em;
-            color: #1f2937;
-            margin-bottom: 20px;
-        }
-        .project-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .project {
-            flex-basis: 30%;
-            margin: 10px;
             background-color: #f0f4f8;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .project a {
-            color: #22d3ee;
-            text-decoration: none;
-        }
 
-        /* Experience Section */
-        .experience {
-            padding: 80px 20px;
-            background-color: #f5f5f5;
-            text-align: center;
+        /* Certifications Section */
+        .certifications {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            text-align: left;
         }
-        .experience h2 {
+        .certifications h2 {
             font-size: 2.5em;
             color: #1f2937;
             margin-bottom: 20px;
         }
-        .experience-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .job {
-            flex-basis: 40%;
-            margin: 10px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Education & Certifications */
-        .education {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: white;
-        }
-        .education h2 {
-            font-size: 2.5em;
-            color: #1f2937;
-            margin-bottom: 20px;
+        .certifications p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
         }
 
         /* Languages Section */
         .languages {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: #f0f4f8;
+            padding: 60px 20px;
+            background-color: white;
+            text-align: left;
         }
         .languages h2 {
             font-size: 2.5em;
             color: #1f2937;
             margin-bottom: 20px;
         }
+        .languages p {
+            font-size: 1.2em;
+            color: #333;
+        }
 
         /* Contact Section */
         .contact {
-            padding: 80px 20px;
+            padding: 60px 20px;
             background-color: #1f2937;
             color: white;
             text-align: center;
@@ -186,6 +205,9 @@
             color: #22d3ee;
             text-decoration: none;
         }
+        .contact a:hover {
+            text-decoration: underline;
+        }
         footer {
             background-color: #111827;
             padding: 20px;
@@ -193,9 +215,15 @@
             color: white;
         }
 
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .skill, .project, .job {
+            .skill, .job, .project {
                 flex-basis: 100%;
             }
         }
@@ -206,10 +234,10 @@
     <!-- Navigation -->
     <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
         <a href="#languages">Languages</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -224,8 +252,38 @@
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>Results-driven Data Analyst with a strong background in analyzing complex datasets, building interactive dashboards, and delivering actionable insights to support business decisions. Experienced in collaborating with cross-functional teams to implement data-driven solutions and improve operational efficiency. Seeking an entry-level role to leverage my analytical expertise and contribute to impactful decision-making processes.</p>
+        <h2>Personal Details</h2>
+        <p><strong>Email:</strong> Sattidineshreddy.dr.dr@gmail.com | <strong>Location:</strong> Illinois, USA | <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyadineswarareddysatti" target="_blank">LinkedIn Profile</a></p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Data Analyst - Collabera Digital</h3>
+            <p>• Led data analysis efforts to streamline supply chain processes, resulting in a 15% boost in efficiency.</p>
+            <p>• Developed Power BI dashboards to track key metrics and improve decision-making processes.</p>
+        </div>
+        <div class="job">
+            <h3>Data Analyst - Dr. Reddy's Laboratories</h3>
+            <p>• Applied advanced data analysis to evaluate machine performance, achieving $50,000 in cost savings.</p>
+            <p>• Optimized regional sales forecasts, enhancing strategic planning with predictive modeling.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Medical Data Analysis Project</h3>
+            <p>Developed predictive models using Python to identify key risk factors for heart disease with 85% accuracy.</p>
+            <a href="https://github.com/satyadineswarareddysatti/Data-analysis" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Customer Segmentation for E-commerce</h3>
+            <p>Used RFM analysis and customer segmentation to enhance targeting strategies, improving engagement by 20%.</p>
+            <a href="https://github.com/satyadineswarareddysatti/Data-analysis" target="_blank">View Project</a>
+        </div>
     </section>
 
     <!-- Skills Section -->
@@ -234,61 +292,19 @@
         <div class="skill-list">
             <div class="skill">Python</div>
             <div class="skill">SQL</div>
-            <div class="skill">PostgreSQL</div>
             <div class="skill">Power BI</div>
             <div class="skill">Excel</div>
             <div class="skill">AWS</div>
-            <div class="skill">OpenAI</div>
-            <div class="skill">Prompt Engineering</div>
-            <div class="skill">GitHub</div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Medical Data Analysis</h3>
-                <p>Developed a predictive model using Python (Pandas, Scikit-learn) to predict heart disease with 85% accuracy. Visualized key insights using Power BI dashboards for better decision-making.</p>
-                <a href="https://github.com/satyadineswarareddysatti/Data-analysis" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Customer Segmentation for E-commerce</h3>
-                <p>Utilized RFM analysis to categorize customers, resulting in a 15% increase in engagement. Built interactive Power BI dashboards for the marketing team to drive data-driven marketing strategies.</p>
-                <a href="https://github.com/satyadineswarareddysatti/Data-analysis" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <h2>Experience</h2>
-        <div class="experience-list">
-            <div class="job">
-                <h3>Data Analyst - Collabera Digital</h3>
-                <p>Analyzed large datasets using Python and SQL to extract actionable insights, improving client decision-making and strategies. Developed custom dashboards and reports in Power BI, providing real-time visibility into KPIs.</p>
-            </div>
-            <div class="job">
-                <h3>Data Analytics - Dr. Reddy's Laboratories</h3>
-                <p>Streamlined supply chain processes, increasing efficiency by 15%. Utilized advanced analytics in Python and Power BI to deliver accurate sales projections, enhancing decision-making.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-        <h2>Education & Certifications</h2>
-        <p>Master of Computer Science - Illinois Institute of Technology, Chicago, IL (Expected: Dec 2024)</p>
-        <p>B.Tech in Biomedical Engineering - Lovely Professional University, Punjab (2022)</p>
-        <h3>Certifications</h3>
-        <ul>
-            <li>Google Data Analytics Professional Certificate</li>
-            <li>IBM Data Engineering Professional Certificate</li>
-            <li>Microsoft - Data Analysis and Visualization with Power BI</li>
-            <li>JPMorgan Chase & Co. - Excel Skills Job Simulation</li>
-            <li>Coursera - Programming for Everybody (Python)</li>
-        </ul>
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <h2>Certifications</h2>
+        <p>Google Data Analytics Professional Certificate</p>
+        <p>IBM Data Engineering Professional Certificate</p>
+        <p>Microsoft Data Analysis and Visualization with Power BI</p>
+        <p>JPMorgan Chase Excel Skills Job Simulation</p>
     </section>
 
     <!-- Languages Section -->
@@ -302,7 +318,7 @@
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:Sattidineshreddy.dr.dr@gmail.com">Sattidineshreddy.dr.dr@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/satyadineswarareddysatti" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/satyadineswarareddysatti" target="_blank">GitHub Profile</a></p>
+        <p>GitHub: <a href="https://github.com/satyadineswarareddysatti/Data-analysis" target="_blank">GitHub Profile</a></p>
     </section>
 
     <footer>
