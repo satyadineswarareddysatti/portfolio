@@ -45,11 +45,25 @@
             color: white;
             padding: 0 20px;
         }
+
+        .hero .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .hero img {
+            width: 150px; /* Adjust the size of the image */
+            height: 150px;
+            border-radius: 50%; /* Circular image */
+            margin-right: 20px; /* Space between the image and text */
+        }
+
         .hero h1 {
             font-size: 3.5em;
             font-weight: 700;
             animation: fadeIn 2s;
         }
+
         .hero p {
             font-size: 1.5em;
             animation: fadeIn 2.5s;
@@ -249,6 +263,16 @@
             .skill, .job, .project {
                 flex-basis: 100%;
             }
+
+            .hero .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
         }
     </style>
 </head>
@@ -268,9 +292,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div>
-            <h1>Satya Dineswara Reddy Satti</h1>
-            <p>Data Analyst</p>
+        <div class="container">
+            <img src="file:///C:/Users/satti/Downloads/20241001_195821.jpg" alt="Satya Dineswara Reddy Satti">
+            <div>
+                <h1>Satya Dineswara Reddy Satti</h1>
+                <p>Data Analyst</p>
+            </div>
         </div>
     </section>
 
@@ -279,8 +306,8 @@
         <h2>Personal Details</h2>
         <p>
             <strong>Email:</strong> Sattidineshreddy.dr.dr@gmail.com<br>
-            <strong>Phone:</strong> +1 (312) 123-4567<br> <!-- Update this with the correct number -->
-            <strong>Location:</strong> Chicago,Illinois, USA<br>
+            <strong>Phone:</strong> +1 (312) 536-3935<br>
+            <strong>Location:</strong> Chicago, Illinois, USA<br>
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/satyadineswarareddysatti" target="_blank">LinkedIn Profile</a>
         </p>
     </section>
@@ -290,25 +317,18 @@
         <h2>Work Experience</h2>
         <div class="job">
             <h3>Data Analyst - Collabera Digital</h3>
-            <p>• Analyzed large datasets using Python and SQL to extract actionable insights, improving client 
-                decision-making and strategies.</p>
-            <p>• Collaborated with teams to design data-driven solutions, optimizing operations and enhancing 
-                customer experience using Excel and Power BI.</p>
+            <p>• Analyzed large datasets using Python and SQL to extract actionable insights, improving client decision-making and strategies.</p>
+            <p>• Collaborated with teams to design data-driven solutions, optimizing operations and enhancing customer experience using Excel and Power BI.</p>
             <p>• Developed custom dashboards and reports in Power BI, providing real-time visibility into KPIs.</p>
-            <p>• Utilized statistical models and machine learning algorithms in Python to predict trends and forecast 
-                outcomes, aiding in risk mitigation.</p>
-            <p>• Cleaned and transformed raw data using Python and SQL to ensure accuracy for analysis and 
-                reporting.</p>
+            <p>• Utilized statistical models and machine learning algorithms in Python to predict trends and forecast outcomes, aiding in risk mitigation.</p>
+            <p>• Cleaned and transformed raw data using Python and SQL to ensure accuracy for analysis and reporting.</p>
         </div>
         <div class="job">
             <h3>Data Analytics-Research Associate - Dr. Reddy's Laboratories</h3>
-            <p>• Streamlined supply chain processes, increasing efficiency by 15% using SQL and Excel for data 
-                analysis.</p>
-            <p>• Utilized advanced analytics in Python and Power BI to deliver accurate sales projections, enhancing 
-                decision-making.</p>
+            <p>• Streamlined supply chain processes, increasing efficiency by 15% using SQL and Excel for data analysis.</p>
+            <p>• Utilized advanced analytics in Python and Power BI to deliver accurate sales projections, enhancing decision-making.</p>
             <p>• Improved production by 10% through machine performance analysis with Python and SQL.</p>
-            <p>• Conducted in-depth data analysis, leading to $50,000 in cost reductions, optimizing procedures with 
-                Excel and SQL.</p>
+            <p>• Conducted in-depth data analysis, leading to $50,000 in cost reductions, optimizing procedures with Excel and SQL.</p>
         </div>
     </section>
 
@@ -317,17 +337,13 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>Medical Data Analysis Project</h3>
-            <p>Predicting Heart Disease Developed a predictive model using Python (Pandas, Scikit-learn) to predict 
-                heart disease with 85% accuracy.</p>
+            <p>Predicting Heart Disease Developed a predictive model using Python (Pandas, Scikit-learn) to predict heart disease with 85% accuracy.</p>
             <p>Visualized key insights using Power BI dashboards for better decision-making. </p>
-            
         </div>
         <div class="project">
             <h3>Customer Segmentation for E-commerce</h3>
             <p>Used RFM analysis and customer segmentation to enhance targeting strategies, improving engagement by 20%.</p>
-            <p>Built interactive Power BI dashboards for the marketing team to drive data-driven marketing 
-                strategies.</p>
-             
+            <p>Built interactive Power BI dashboards for the marketing team to drive data-driven marketing strategies.</p>
         </div>
     </section>
 
@@ -357,14 +373,13 @@
         <p>Essentials of Prompt Engineering By Amazon Web Services</p>
         <p>Programming for Everybody (Getting Started with Python)</p>
         <p>IBM Generative AI for Data Analysts Specialization</p>
-        
     </section>
 
     <!-- Education Section -->
     <section class="education" id="education">
         <h2>Education</h2>
         <div class="school">
-            <h3>Master of Computer Science - Illinois Institute of Technology, Chicago, IL</h3>
+            <h3>Master of Computer Science - Illinois Institute of Technology, Chicago, IL, USA</h3>
             <p>Expected Graduation: December 2024</p>
         </div>
         <div class="school">
